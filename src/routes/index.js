@@ -14,8 +14,8 @@ import Edit from '~/pages/Edit';
 export default function Routes() {
   return (
     <Switch>
-      <Route path="/" exact component={SignIn} />
-      <Route path="/register" component={SignUp} />
+      <Route path="/" exact component={SignUp} />
+      <Route path="/login" component={SignIn} />
 
       <Route path="/dashboard" component={Dashboard} isPrivate />
       <Route path="/profile" component={Profile} isPrivate />
