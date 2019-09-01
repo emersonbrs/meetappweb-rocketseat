@@ -54,5 +54,10 @@ export const Content = styled.div`
         opacity: 1;
       }
     }
+    span {
+      color: #f94d6a;
+      align-self: flex-start;
+      margin: 0 0 10px;
+    }
   }
 `;

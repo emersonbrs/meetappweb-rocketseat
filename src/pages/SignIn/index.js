@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Form, Input } from '@rocketseat/unform';
 
-import logo from '~/assets/logo.svg';
+import schema from '~/validation/SignIn';
+
+import Logo from '~/components/Logo';
 
 // import { Container } from './styles';
 
@@ -13,9 +15,9 @@ export default function SignIn() {
 
   return (
     <>
-      <img src={logo} alt="MeetApp" />
+      <Logo />
 
-      <Form onSubmit={handleSubmit}>
+      <Form schema={schema} onSubmit={handleSubmit}>
         <Input name="email" type="email" placeholder="Coloque seu e-mail" />
         <Input
           name="password"
